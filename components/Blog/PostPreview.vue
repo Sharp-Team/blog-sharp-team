@@ -9,6 +9,7 @@
         <a href="">
           <h2 class="title is-2 is-primary">{{ title }}</h2>
         </a>
+        <hr>
         <div class="media">
           <div class="media-left">
             <figure class="image is-48x48">

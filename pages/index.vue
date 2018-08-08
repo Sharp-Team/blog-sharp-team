@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Posts from '../components/Blog/Posts'
+import Posts from './posts'
 
 export default {
   components: {
