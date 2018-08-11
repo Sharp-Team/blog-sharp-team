@@ -22,7 +22,7 @@
     </div>
 </template>
 <script>
-  import config from '../api/config'
+  import config from '../../api/config'
   export default {
     data () {
       return {
