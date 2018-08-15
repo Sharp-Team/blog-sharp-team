@@ -1,6 +1,6 @@
 <template>
   <div>
-    <br>
+    <image-team></image-team>
     <div class="columns">
       <div class="column is-9">
         <div v-for="post in posts" :key="post.ID">
@@ -30,11 +30,13 @@
 
 <script>
   import PostPreview from '../components/Blog/PostPreview'
+  import ImageTeam from '../components/Header/ImageTeam.vue';
   import api from '../api/index.js'
   import config from '../api/config'
   export default {
     components: {
-      PostPreview
+      PostPreview,
+      ImageTeam
     },
     // async asyncData({ app }) {
     //   const ip = await app.$axios.$get(config.baseUrl + 'posts')
