@@ -1,29 +1,37 @@
 <template>
-  <div class="container">
+  <div>
+    <navigation></navigation>
     <br>
-    <div class="has-text-centered ">
-      <figure class="image is-48x48 img-center">
-        <img class="img" :src="author.avatar_URL">
-      </figure>
-      <p class="title is-4">{{ author.first_name }} {{ author.last_name }}</p>
-      <p class="subtitle is-6">{{ author.login }}</p>
-      <h2 class="title is-2 is-primary">{{ post.title }}</h2>
+    <div class="container">
+      <div class="has-text-centered ">
+        <figure class="image is-48x48 img-center">
+          <img class="img" :src="author.avatar_URL">
+        </figure>
+        <p class="title is-4">{{ author.first_name }} {{ author.last_name }}</p>
+        <p class="subtitle is-6">{{ author.login }}</p>
+        <h2 class="title is-2 is-primary">{{ post.title }}</h2>
+      </div>
+      <hr>
+      <div class="columns">
+        <div class="column is-2">
+        </div>
+        <div class="column">
+          <p v-html="post.content"></p>
+        </div>
+        <div class="column is-2">
+        </div>
+      </div>
     </div>
-    <hr>
-    <div class="columns">
-      <div class="column is-2">
-      </div>
-      <div class="column">
-        <p v-html="post.content"></p>
-      </div>
-      <div class="column is-2">
-      </div>
-    </div>
+    <footer></footer>
   </div>
 </template>
 <script>
   import config from '../../api/config'
+  import Navigation from '../../components/Header/Navigation'
   export default {
+    components: {
+      Navigation
+    },
     data() {
       return {
         author: [],

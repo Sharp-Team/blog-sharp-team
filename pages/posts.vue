@@ -1,6 +1,6 @@
 <template>
   <div>
-    <image-team></image-team>
+    <!-- <image-team></image-team> -->
     <div class="columns">
       <div class="column is-9">
         <div v-for="post in posts" :key="post.ID">
@@ -60,3 +60,5 @@
     },
   }
 </script>
+<style>
+</style>

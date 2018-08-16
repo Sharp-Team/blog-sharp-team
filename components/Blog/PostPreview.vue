@@ -2,7 +2,8 @@
   <div class="card myCard">
     <div class="myLogoBack hexagon">
     </div>
-    <i class="fas fa-hashtag myLogo"></i>
+    <!-- <i class="fas fa-hashtag myLogo"></i> -->
+    <i class="fab fa-vuejs myLogo"></i>
     <div class="card-image">
       <figure class="image is-5by3">
         <img :src="urlImage" alt="Placeholder image">
@@ -92,9 +93,10 @@
   }
   .myLogo {
     position: absolute;
-    left: 51.5%;
+    left: 50%;
     margin-left: -50px;
     margin-top: -22px;
+    padding-left: 15px;
     z-index: 3;
     font-size: 35px;
     color: white;

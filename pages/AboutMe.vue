@@ -1,29 +1,30 @@
 <template>
   <div>
     <navigation></navigation>
+    <br>
+    <br>
+    <br>
+    <image-team class="myImage"></image-team>
     <section class="container">
-      <div>
-        <posts/>
-      </div>
+
     </section>
     <my-footer></my-footer>
   </div>
 </template>
 
 <script>
-  import Posts from './posts'
   import Navigation from '../components/Header/Navigation'
   import MyFooter from '../components/Footer/Footer.vue'
+  import ImageTeam from '../components/Header/ImageTeam.vue';
 
   export default {
     components: {
-      Posts,
       Navigation,
-      MyFooter
+      MyFooter,
+      ImageTeam
     }
   }
 </script>
 <style scoped>
-
-
 </style>
+
