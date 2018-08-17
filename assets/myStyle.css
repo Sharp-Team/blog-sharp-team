@@ -2,3 +2,52 @@ body {
     background-color: #F7F7FA;
     /* font-family: 'Lato', sans-serif; */
 }
+/* MEMBER */
+.myTeam {
+    margin-top: 50px;
+    margin-bottom: 15px;
+  }
+  .myCard {
+    position: relative;
+  }
+
+  .myImage {
+    position: absolute;
+    width: 90px;
+    left: 50%;
+    margin-left: -47px;
+    top: -49px;
+    z-index: 2;
+  }
+
+  .myImageBack {
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    margin-left: -52.2px;
+    top: -53.2px;
+    z-index: 1;
+  }
+
+  .mySubtitle {
+    font-size: 12px;
+    color: #99a1a9;
+  }
+
+  .clip-hexagon {
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  }
+
+  .myBreak {
+    height: 1px;
+  }
+
+  .myIcon {
+    font-size: 30px;
+  }
+
+  .fab {
+    color: palevioletred;
+  }
+/* MEMBER */
