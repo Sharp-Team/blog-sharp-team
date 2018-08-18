@@ -24,14 +24,18 @@
               transform="translate(-8.02 -8.02)" />
           </svg>
         </a>
-        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <div 
+          class="navbar-burger burger" 
+          data-target="navbarExampleTransparentExample"
+          @click="toggleMenu" 
+          :class="{'is-active': navIsActive}">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
 
-      <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div id="navbarExampleTransparentExample" class="navbar-menu" :class="{'is-active': navIsActive}">
         <div class="navbar-start">
           <a class="navbar-item" href="/">
               Home
@@ -71,7 +75,15 @@
 <script>
   import anime from 'animejs'
   export default {
+    data () {
+      return {
+        navIsActive: false
+      }
+    },
     methods: {
+      toggleMenu: function () {
+        this.navIsActive = !this.navIsActive
+      },
       animate() {
         anime({
           targets: '#Layer_1 path',

@@ -47,24 +47,4 @@
       </div>
     </div>
   </div>
-</template>
-<script>
-  import anime from 'animejs'
-  export default {
-    methods: {
-      animate() {
-        anime({
-            targets: '.myFirstCard', //class thaycacac in HTML
-            duration: 1500,
-            loop: true, //allays loop(can number)
-            opacity:0.7, //opacity from 1 to 0.5
-            direction: 'alternate',
-            delay: 500,
-            })
-        }
-      },
-      mounted() {
-        return this.animate()
-      }
-  }
-</script>
+</template>s

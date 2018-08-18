@@ -68,7 +68,6 @@
       this.display()
     },
   }
-
 </script>
 <style>
 </style>

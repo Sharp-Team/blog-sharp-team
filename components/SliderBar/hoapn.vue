@@ -1,5 +1,5 @@
 <template>
-  <div class="myTeam" @mousemove="animate2">
+  <div class="myTeam" @mousemove="animateMove" @mouseout="animateOut">
     <div class="card myCard myFirstCard">
       <article class="notification is-danger has-text-centered">
         <p class="title is-4">HoaPN</p>
@@ -61,12 +61,19 @@
             direction: 'alternate'
             })
         },
-      animate2() {
+      animateMove() {
         anime({
             targets: '.clip-hexagon', //class thaycacac in HTML
             duration: 1500,
-            scale: 2, //zoom 2x   
-            scale: 1, //zoom 2x         
+            scale: 2, //zoom 2x          
+            // direction: 'alternate'
+            })
+        },
+      animateOut() {
+        anime({
+            targets: '.clip-hexagon', //class thaycacac in HTML
+            duration: 1500,
+            scale: 1, //zoom 2x          
             // direction: 'alternate'
             })
         }
