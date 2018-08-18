@@ -1,53 +1,161 @@
 body {
-    background-color: #F7F7FA;
-    /* font-family: 'Lato', sans-serif; */
+  background-color: #F7F7FA;
+  /* font-family: 'Lato', sans-serif; */
 }
+
 /* MEMBER */
+
 .myTeam {
-    margin-top: 50px;
-    margin-bottom: 15px;
-  }
-  .myCard {
-    position: relative;
-  }
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
 
-  .myImage {
-    position: absolute;
-    width: 90px;
-    left: 50%;
-    margin-left: -47px;
-    top: -49px;
-    z-index: 2;
-  }
+.myCard {
+  position: relative;
+}
 
-  .myImageBack {
-    position: absolute;
-    width: 100px;
-    left: 50%;
-    margin-left: -52.2px;
-    top: -53.2px;
-    z-index: 1;
-  }
+.myImage {
+  position: absolute;
+  width: 90px;
+  left: 50%;
+  margin-left: -47px;
+  top: -49px;
+  z-index: 2;
+}
 
-  .mySubtitle {
-    font-size: 12px;
-    color: #99a1a9;
-  }
+.myImageBack {
+  position: absolute;
+  width: 100px;
+  left: 50%;
+  margin-left: -52.2px;
+  top: -53.2px;
+  z-index: 1;
+}
 
-  .clip-hexagon {
-    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-  }
+.mySubtitle {
+  font-size: 12px;
+  color: #99a1a9;
+}
 
-  .myBreak {
-    height: 1px;
-  }
+.clip-hexagon {
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
 
-  .myIcon {
-    font-size: 30px;
-  }
+.myBreak {
+  height: 1px;
+}
 
-  .fab {
-    color: palevioletred;
-  }
+.myIcon {
+  font-size: 30px;
+}
+
+.fab {
+  color: palevioletred;
+}
+
 /* MEMBER */
+
+/* POST */
+.myCardPost {
+  margin: 50px 0px 0px 0px;
+  border-top: 4px solid #eb005d;
+  position: relative;
+}
+.myLogoBack {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -22px;
+}
+.myLogo {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -22px;
+  padding-left: 15px;
+  z-index: 3;
+  font-size: 35px;
+  color: white;
+}
+.myTitle {
+  font-family: 'Lato', sans-serif;
+  color: #515e6c;
+  font-weight: 400;
+  text-align: center;
+  font-size: 31px;
+}
+.myTitle:hover {
+  color: #eb005d;
+}
+
+.mySplit {
+  /* background: #e6e4e4; */
+  background: linear-gradient(to right, #e6e4e4 30%, red 50%, #e6e4e4 70%);
+  height: 1px;
+}
+
+.mySplit2 {
+  background: #e6e4e4;
+  height: 1px;
+}
+
+.myContent {
+  color: #99a1a9;
+  font-size: 16px;
+  line-height: 20px;
+  /* font-family: 'Lato', sans-serif; */
+}
+
+.myButton {
+  font-family: 'Lato', sans-serif;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 0px 30px;
+  min-width: 90px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.myIcon {
+  color: #eb005d;
+  padding: 0px 0px 0px 10px;
+}
+
+.myInfo {
+  display: inline;
+  padding: 0px 10px;
+}
+
+.myDetail {
+  color: #99a1a9;
+  font-size: 14px;
+}
+.hexagon {
+  width: 60px; 
+  height: 34.64px;
+  background-color: #eb005d;
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 17.32px solid #eb005d;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 17.32px solid #eb005d;
+}
+/* POST */

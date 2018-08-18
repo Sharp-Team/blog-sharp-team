@@ -2,35 +2,49 @@
   <div>
     <navigation></navigation>
     <br>
+    <br>
     <div class="container">
-      <div class="has-text-centered ">
-        <figure class="image is-48x48 img-center">
-          <img class="img" :src="author.avatar_URL">
-        </figure>
-        <p class="title is-4">{{ author.first_name }} {{ author.last_name }}</p>
-        <p class="subtitle is-6">{{ author.login }}</p>
-        <h2 class="title is-2 is-primary">{{ post.title }}</h2>
-      </div>
-      <hr>
-      <div class="columns">
-        <div class="column is-2">
+      <div class="card myCard">
+        <div class="myLogoBack hexagon">
         </div>
-        <div class="column">
-          <p v-html="post.content"></p>
+        <!-- <i class="fas fa-hashtag myLogo"></i> -->
+        <i class="fab fa-vuejs myLogo"></i>
+        <div class="card-image">
+          <figure class="image is-5by3">
+            <img :src="post.featured_image" alt="Placeholder image">
+          </figure>
         </div>
-        <div class="column is-2">
+        <div class="card-content">
+            <h2 class="title is-2 is-primary myTitle">{{ post.title }}</h2>
+
+          <hr class="mySplit">
+          <div class="myDetail has-text-centered">
+            <i class="fas fa-user myIcon"></i>
+            <time class="myInfo">{{ author.login }}</time>/
+            <i class="fas fa-file-signature myIcon"></i>
+            <p class="myInfo">{{ author.first_name }} {{ author.last_name }}</p>/
+            <i class="fas fa-comments myIcon"></i>
+            <p class="myInfo"> No Comments</p>/
+            <i class="far fa-calendar-alt myIcon"></i>
+            <p class="myInfo">{{ post.modified }}</p>
+          </div>
+          <hr class="mySplit2">
+          <div class="content myContent" v-html="post.content">
+          </div>
         </div>
       </div>
     </div>
-    <footer></footer>
+    <my-footer></my-footer>
   </div>
 </template>
 <script>
   import config from '../../api/config'
   import Navigation from '../../components/Header/Navigation'
+  import MyFooter from '../../components/Footer/Footer.vue'
   export default {
     components: {
-      Navigation
+      Navigation,
+      MyFooter
     },
     data() {
       return {

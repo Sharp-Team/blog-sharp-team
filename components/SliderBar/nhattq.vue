@@ -1,7 +1,7 @@
 <template>
   <div class="myTeam">
     <div class="card myCard myFirstCard">
-      <article class="notification is-link has-text-centered">
+      <article class="notification is-primary has-text-centered">
         <p class="title is-4">NhatTQ</p>
         <hr class="myBreak">
         <br>

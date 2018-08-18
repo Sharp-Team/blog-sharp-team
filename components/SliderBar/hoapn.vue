@@ -1,5 +1,5 @@
 <template>
-  <div class="myTeam">
+  <div class="myTeam" @mousemove="animate2">
     <div class="card myCard myFirstCard">
       <article class="notification is-danger has-text-centered">
         <p class="title is-4">HoaPN</p>
@@ -59,6 +59,15 @@
             loop: true, //allays loop(can number)
             opacity:0.7, //opacity from 1 to 0.5
             direction: 'alternate'
+            })
+        },
+      animate2() {
+        anime({
+            targets: '.clip-hexagon', //class thaycacac in HTML
+            duration: 1500,
+            scale: 2, //zoom 2x   
+            scale: 1, //zoom 2x         
+            // direction: 'alternate'
             })
         }
       },

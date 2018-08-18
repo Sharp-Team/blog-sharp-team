@@ -4,16 +4,15 @@
     <br>
     <br>
     <br>
-    <image-team class="myImage"></image-team>
+    <image-team></image-team>
     <section class="container">
-
     </section>
     <my-footer></my-footer>
   </div>
 </template>
 
 <script>
-  import Navigation from '../components/Header/Navigation'
+  import Navigation from '../components/Header/Navigation.vue'
   import MyFooter from '../components/Footer/Footer.vue'
   import ImageTeam from '../components/Header/ImageTeam.vue';
 
