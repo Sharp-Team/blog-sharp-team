@@ -40,12 +40,6 @@
           <a class="navbar-item" href="/">
               Home
           </a>
-          <a class="navbar-item" href="/">
-              VueJS
-          </a>
-          <a class="navbar-item" href="/">
-              NodeJS
-          </a>
           <a class="navbar-item" href="/aboutme">
               About Me
           </a>

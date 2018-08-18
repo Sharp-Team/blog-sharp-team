@@ -23,13 +23,13 @@
       </div>
       <hr class="mySplit2">
       <div class="myDetail has-text-centered">
-        <i class="fas fa-user myIcon"></i>
+        <i class="fas fa-user myIconPost"></i>
         <time class="myInfo">{{ user }}</time>/
-        <i class="fas fa-file-signature myIcon"></i>
+        <i class="fas fa-file-signature myIconPost"></i>
         <p class="myInfo">{{ firstName }} {{ lastName }}</p>/
-        <i class="fas fa-comments myIcon"></i>
+        <i class="fas fa-comments myIconPost"></i>
         <p class="myInfo"> No Comments</p>/
-        <i class="far fa-calendar-alt myIcon"></i>
+        <i class="far fa-calendar-alt myIconPost"></i>
         <p class="myInfo">{{ time }}</p>
       </div>
     </div>
