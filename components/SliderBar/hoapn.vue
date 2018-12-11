@@ -1,5 +1,5 @@
 <template>
-  <div class="myTeam" @mousemove="animateMove" @mouseout="animateOut">
+  <div class="myTeam">
     <div class="card myCard myFirstCard">
       <article class="notification is-danger has-text-centered">
         <p class="title is-4">HoaPN</p>
@@ -48,38 +48,3 @@
     </div>
   </div>
 </template>
-<script>
-  import anime from 'animejs'
-  export default {
-    methods: {
-      animate() {
-        anime({
-            targets: '.myFirstCard', //class thaycacac in HTML
-            duration: 1500,
-            loop: true, //allays loop(can number)
-            opacity:0.7, //opacity from 1 to 0.5
-            direction: 'alternate'
-            })
-        },
-      animateMove() {
-        anime({
-            targets: '.clip-hexagon', //class thaycacac in HTML
-            duration: 1500,
-            scale: 2, //zoom 2x          
-            // direction: 'alternate'
-            })
-        },
-      animateOut() {
-        anime({
-            targets: '.clip-hexagon', //class thaycacac in HTML
-            duration: 1500,
-            scale: 1, //zoom 2x          
-            // direction: 'alternate'
-            })
-        }
-      },
-      mounted() {
-        return this.animate()
-      }
-  }
-</script>
