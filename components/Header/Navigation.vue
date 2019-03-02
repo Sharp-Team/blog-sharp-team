@@ -83,7 +83,7 @@
           targets: '#Layer_1 path',
           strokeDashoffset: [anime.setDashoffset, 0],
           duration: 2000,
-          delay: 1000,
+          delay: 20,
           easing: 'easeOutSine',
           direction: 'alternate',
           loop: true

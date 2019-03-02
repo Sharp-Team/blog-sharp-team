@@ -18,7 +18,8 @@
     "axios": "^0.18.0",
     "font-awesome": "^4.7.0",
     "nuxt": "^2.3.4",
-    "nuxt-buefy": "^0.3.2"
+    "nuxt-buefy": "^0.3.2",
+    "vue-class-component": "^6.3.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
