@@ -252,9 +252,9 @@
 </script>
 
 <style scoped>
-img {
-  opacity: 0;
-}
+  img {
+    opacity: 0;
+  }
   .myTeam {
     top: -60px;
     position: relative;

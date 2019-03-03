@@ -37,11 +37,14 @@
 
       <div id="navbarExampleTransparentExample" class="navbar-menu" :class="{'is-active': navIsActive}">
         <div class="navbar-start">
-          <nuxt-link class="navbar-item" to="/">
+          <nuxt-link class="navbar-item my-nav" to="/">
             Home
           </nuxt-link>
-          <nuxt-link class="navbar-item" to="/aboutme">
-              About Me
+          <nuxt-link class="navbar-item my-nav" to="/blog">
+              Blog
+          </nuxt-link>
+          <nuxt-link class="navbar-item my-nav" to="/aboutme">
+              About Sharp Team
           </nuxt-link>
         </div>
         <hr>
@@ -56,6 +59,15 @@
                   </span>
                   <span>
                     Github
+                  </span>
+                </a>
+                <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                  target="_blank" href="https://www.facebook.com/groups/147545892610027/">
+                  <span class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </span>
+                  <span>
+                    Facebook
                   </span>
                 </a>
               </p>
@@ -97,6 +109,18 @@
 
 </script>
 <style scoped>
+  .nuxt-link-exact-active {
+    font-size: 18px !important;
+  }
+
+  .my-nav {
+    color: #464646 !important;
+  }
+
+  .my-nav:hover {
+    color: rgb(92, 0, 0) !important;
+  }
+
   .myNav {
     background-color: white;
     height: 90px;

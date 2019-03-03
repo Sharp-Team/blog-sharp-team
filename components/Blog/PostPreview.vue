@@ -2,7 +2,6 @@
   <div class="card myCardPost">
     <div class="myLogoBack hexagon">
     </div>
-    <!-- <i class="fas fa-hashtag myLogo"></i> -->
     <i class="fab fa-vuejs myLogo"></i>
     <div class="card-image">
       <figure class="image is-5by3">
@@ -80,5 +79,5 @@
 
 </script>
 <style scoped>
-  
+
 </style>
